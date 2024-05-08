@@ -11,6 +11,14 @@
 [**Rita Cucchiara**](https://scholar.google.com/citations?hl=en&user=OM3sZEoAAAAJ)
 
 This is the **official repository** for the paper [**OpenFashionCLIP: Vision-and-Language Contrastive Learning with Open-Source Fashion Data**](https://iris.unimore.it/retrieve/2e539813-e1e2-49a3-825f-961ee9c6bde5/2023-iciap-fashion.pdf), ICIAP 2023.
+
+## Preliminaries
+```
+# download model weights
+mkdir weights
+cd weights && wget https://ailb-web.ing.unimore.it/publicfiles/OpenFashionCLIP/finetuned_clip.pt
+```
+
 ## 🔥 News 🔥
 - **`31 August 2023`** Release of the inference code and checkpoint!
 - **`1 July 2023`** Our work has been accepted for publication to [ICIAP 2023](https://iciap2023.org/) 🎉 🎉 !!!
