@@ -3,14 +3,14 @@ from PIL import Image
 import torch
 import time
 
-start_time = time.time()
+# start_time = time.time()
 
 
 device = 'cuda' if torch.cuda.is_available() else 'cpu'
 
 # Load the model
 clip_model, _, preprocess = open_clip.create_model_and_transforms('ViT-B/32')
-state_dict = torch.load('weights/openfashionclip.pt', map_location=device)
+state_dict = torch.load('module/CLIP/openfashionclip.pt', map_location=device)
 clip_model.load_state_dict(state_dict['CLIP'])
 clip_model = clip_model.eval().requires_grad_(False).to(device)
 tokenizer = open_clip.get_tokenizer('ViT-B-32')
@@ -48,6 +48,6 @@ print("Labels probabilities in percentage:", formatted_probs)
 # print("Labels probs:", text_probs)
 # 여기에 시간을 측정하고 싶은 코드 블록을 넣습니다.
 
-end_time = time.time()
-total_time = end_time - start_time
-print(f"Total execution time: {total_time:.2f} seconds")
+# end_time = time.time()
+# total_time = end_time - start_time
+# print(f"Total execution time: {total_time:.2f} seconds")

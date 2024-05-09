@@ -1,1 +1,3 @@
 *.pt
+*.out
+clip2gpsr/gpsr_repo/gpsr_config.json
