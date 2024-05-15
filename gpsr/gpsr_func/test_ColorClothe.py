@@ -1,7 +1,5 @@
 from PIL import Image
-from initCLIP import init_clip
-from detectTopColor import detectTopColor
-from detectTopClothe import detectTopClothe
+from detectCLIP import init_clip, detectTopColor, detectTopClothe
 
 # Initialize CLIP once
 clip_model, preprocess, tokenizer, device = init_clip()

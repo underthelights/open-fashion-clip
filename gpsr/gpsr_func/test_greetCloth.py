@@ -1,5 +1,4 @@
 from greetClothDscInRm import greetClothDscInRm
-
 # Example of how to call this function
 params = {'greetVerb': 'Salute', 
           'art': 'a', 
